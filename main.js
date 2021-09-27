@@ -1,1 +1,26 @@
-const _0x49e33b=_0x1bde;(function(_0x1a9ef7,_0x3ab01a){const _0x31ce20=_0x1bde,_0x439634=_0x1a9ef7();while(!![]){try{const _0x5d6c88=parseInt(_0x31ce20(0x14a))/0x1+-parseInt(_0x31ce20(0x149))/0x2+parseInt(_0x31ce20(0x143))/0x3+-parseInt(_0x31ce20(0x13c))/0x4*(-parseInt(_0x31ce20(0x141))/0x5)+-parseInt(_0x31ce20(0x13b))/0x6+parseInt(_0x31ce20(0x153))/0x7+-parseInt(_0x31ce20(0x154))/0x8;if(_0x5d6c88===_0x3ab01a)break;else _0x439634['push'](_0x439634['shift']());}catch(_0x23f1a0){_0x439634['push'](_0x439634['shift']());}}}(_0x2a8a,0xc5032));let icon=document[_0x49e33b(0x148)](_0x49e33b(0x136));icon[_0x49e33b(0x14e)]=function(){const _0x4705b9=_0x49e33b;document[_0x4705b9(0x142)][_0x4705b9(0x150)][_0x4705b9(0x137)]('dark-theme'),document['querySelector'](_0x4705b9(0x147))['style'][_0x4705b9(0x13d)]=_0x4705b9(0x135),document[_0x4705b9(0x142)][_0x4705b9(0x150)][_0x4705b9(0x146)](_0x4705b9(0x14f))?icon[_0x4705b9(0x13f)]=_0x4705b9(0x138):icon[_0x4705b9(0x13f)]=_0x4705b9(0x134);};let opciones=document[_0x49e33b(0x140)](_0x49e33b(0x139));opciones[_0x49e33b(0x14b)](_0x536247=>{const _0x45ac2c=_0x49e33b;_0x536247[_0x45ac2c(0x144)]('click',()=>{const _0x3bbd0e=_0x45ac2c;document[_0x3bbd0e(0x133)]('.active')[_0x3bbd0e(0x150)][_0x3bbd0e(0x145)]('active'),_0x536247[_0x3bbd0e(0x150)][_0x3bbd0e(0x13a)](_0x3bbd0e(0x151));});});function _0x2a8a(){const _0x259723=['src','querySelectorAll','1485195VqDfnu','body','153204ZyAewi','addEventListener','remove','contains','.header','getElementById','347474WVfqiU','1557557ZlQGVj','forEach','load','style','onclick','dark-theme','classList','active','display','958650soWruy','6177904yuwuKt','querySelector','img/luna.svg','all\x201s','icon','toggle','img/sol.svg','nav\x20ul\x20li\x20a','add','7084764xNlPIe','16aiIKlj','transition','none'];_0x2a8a=function(){return _0x259723;};return _0x2a8a();}let loader=document[_0x49e33b(0x148)]('preloader'),web=document[_0x49e33b(0x148)]('web');function _0x1bde(_0x1e8b29,_0x2aadd4){const _0x2a8aa2=_0x2a8a();return _0x1bde=function(_0x1bde12,_0x5d6584){_0x1bde12=_0x1bde12-0x133;let _0x18218e=_0x2a8aa2[_0x1bde12];return _0x18218e;},_0x1bde(_0x1e8b29,_0x2aadd4);}web['style'][_0x49e33b(0x152)]='none',window[_0x49e33b(0x144)](_0x49e33b(0x14c),()=>{setTimeout(()=>{const _0x259874=_0x1bde;loader[_0x259874(0x14d)][_0x259874(0x152)]=_0x259874(0x13e),web[_0x259874(0x14d)][_0x259874(0x152)]='block';},0xd16);});
+let icon = document.getElementById("icon");
+
+icon.onclick = function() {
+
+    document.body.classList.toggle("dark-theme");
+    
+    document.querySelector("main").style.transition = "1s"
+    document.querySelector("header").style.transition = "1s"
+
+    if (document.body.classList.contains("dark-theme")) {
+        icon.src = "img/sol.svg";
+    } else {
+        icon.src = "img/luna.svg";      
+    }
+}
+
+let opciones = document.querySelectorAll("nav ul li a");
+
+opciones.forEach(element => {
+    element.addEventListener("click", () => {
+        document.querySelector(".active").classList.remove("active")
+        element.classList.add("active")
+
+    })    
+});
+
