@@ -169,7 +169,6 @@ span {
   top: 0;
   left: 15%;
   width:70%;
-  z-index: 1001 ;
   animation: flotar 3s ease-in-out infinite;
 }
 
@@ -199,9 +198,6 @@ span {
     background: var(--fondo);
     box-shadow: 0 4px 20px rgb(14 55 54 / 12%);
   }  
-  .imagen .niño {
-    z-index: 999;
-  }
 }
 
 
