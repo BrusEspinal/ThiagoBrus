@@ -175,7 +175,7 @@ span {
   cursor: pointer;
 }
 
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
   .imagen {
     position: relative;
     bottom: 0;
@@ -209,43 +209,3 @@ span {
   }
 }
 
-@media (max-width: 786px) and (orientation: landscape) {
-  .imagen .detalle {
-    display: none;
-  }
-
-  .imagen .niño {
-    width: 300px;
-  }
-
-  .datos h1 {
-    width: 60%;
-  }
-
-  .datos p {
-    width: 50%;
-  }
-}
-
-@keyframes animar {
-  0% {
-      opacity: 0;        
-  }
-  100% {
-      opacity: 1;       
-  }    
-}
-
-#preloader {
-  background: #fff;      
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#preloader img {
-  width: 200px;
-}
