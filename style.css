@@ -193,12 +193,15 @@ span {
 @media (max-width: 991px) {
   main {
     padding: 100px 10%;
-    gap: 100px;
   }
   .header {
     background: var(--fondo);
     box-shadow: 0 4px 20px rgb(14 55 54 / 12%);
   }  
+  .imagen {
+    margin-top: 50px;
+
+  }
 }
 
 
@@ -216,7 +219,7 @@ span {
 
 @media (max-width: 364px) { 
   .social {
-    justify-content: space-between;    
+    gap: 20px;    
   }
 }
 
