@@ -215,12 +215,7 @@ span {
   .datos h1 {
     line-height: 4rem;
   }
-}
-
-@media (max-width: 364px) { 
   .social a {
     margin-right: 1rem;    
   }
 }
-
- 
