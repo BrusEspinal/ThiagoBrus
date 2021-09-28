@@ -218,8 +218,8 @@ span {
 }
 
 @media (max-width: 364px) { 
-  .social {
-    gap: 20px;    
+  .social a {
+    margin-right: 1rem;    
   }
 }
 
