@@ -32,5 +32,3 @@ ham.addEventListener("click", () => {
     ham.classList.toggle("fa-times")
     
 })
-
-
