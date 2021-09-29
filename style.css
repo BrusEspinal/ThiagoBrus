@@ -230,7 +230,6 @@ span {
   .datos h1 {
     line-height: 4rem;
   }
-  
   .social {
     gap: 1.5rem;     
   }
@@ -242,7 +241,6 @@ span {
   .fa-times {
     transform: rotate(90deg);
   }
-  
   .logo {
     width: 2rem;
   }
