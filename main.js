@@ -24,3 +24,13 @@ opciones.forEach(element => {
     })    
 });
 
+const ham = document.getElementById("ham");
+const menu = document.querySelector(".menu")
+
+ham.addEventListener("click", () => {
+    menu.classList.toggle("activo")
+    ham.classList.toggle("fa-times")
+    
+})
+
+
