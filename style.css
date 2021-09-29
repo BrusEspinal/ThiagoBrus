@@ -45,7 +45,7 @@ nav {
 }
 
 .logo {
-  width: 3rem;
+  width: 2.5rem;
   cursor: pointer;
 }
 
@@ -241,6 +241,10 @@ span {
 
   .fa-times {
     transform: rotate(90deg);
+  }
+  
+  .logo {
+    width: 2rem;
   }
 
 }
