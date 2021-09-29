@@ -18,13 +18,15 @@
   --celeste: #16baf9;
   --celeste-claro: #55cdfa;
   --texto-plomo: #727271;
-
+  --fondomenu: #182538;
+  --textomenu: #ffffff;  
 }
 
 .dark-theme {
   --fondo: #182538;
   --texto-plomo: #d9dada;
-
+  --fondomenu: #ffffff;
+  --textomenu: #727271;
 }
 
 .header {
@@ -43,12 +45,13 @@ nav {
 }
 
 .logo {
-  width: 50px;
+  width: 3rem;
   cursor: pointer;
 }
 
 nav ul {
   display: flex;
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 nav ul a {
@@ -64,14 +67,18 @@ nav ul a.active {
   color: var(--celeste);
 }
 
-nav #icon {
+#icon {
   width: 1.5rem;
+  cursor: pointer;
 }
 
-nav #ham {
-  font-size: 1.5rem;
+#ham {
+  font-size: 1.3rem;
   color: var(--texto-plomo);
   display: none;
+  z-index: 1000;
+  transition: .2s linear;
+  cursor: pointer;
 }
 
 main {
@@ -83,7 +90,6 @@ main {
   flex-wrap: wrap;
   padding: 120px 10%;
   gap: 2rem;
-
 }
 
 .datos {
@@ -185,11 +191,6 @@ span {
   }
 }
 
-#icon {
-  width: 20px;
-  cursor: pointer;
-}
-
 @media (max-width: 991px) {
   main {
     padding: 100px 10%;
@@ -200,22 +201,45 @@ span {
   }  
   .imagen {
     margin-top: 50px;
-
   }
 }
-
 
 @media (max-width:768px) {
   nav #ham {
     display: initial;
   }
   nav ul {
-    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: var(--fondomenu);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    clip-path: circle(0% at 50% 50%);
+    gap: 20px;
   }
+
+  nav ul a {
+    color: var(--textomenu);
+    font-size: 1rem;
+  }
+
   .datos h1 {
     line-height: 4rem;
   }
   .social {
-    gap: 1.5rem;  
+    gap: 1.5rem;     
   }
+  
+  .activo {    
+    clip-path: circle(100% at 50% 50%);
+  }
+
+  .fa-times {
+    transform: rotate(90deg);
+  }
+
 }
