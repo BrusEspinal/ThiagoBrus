@@ -8,9 +8,9 @@ icon.onclick = function() {
     document.querySelector("header").style.transition = "1s"
 
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "img/sol.svg";
+        icon.src = "img/luna.svg";
     } else {
-        icon.src = "img/luna.svg";      
+        icon.src = "img/sol.svg";      
     }
 }
 
