@@ -10,23 +10,24 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 :root {
-  --fondo: #ffffff;
+  --fondo: #182538;
+  --texto-plomo: #d9dada;
   --anaranjado: #ffad00;
   --celeste: #16baf9;
   --celeste-claro: #55cdfa;
-  --texto-plomo: #727271;
-  --fondomenu: #182538;
-  --textomenu: #ffffff;  
+    --fondomenu: #f8f8f8;
+  --textomenu: #727271;
 }
 
 .dark-theme {
-  --fondo: #182538;
-  --texto-plomo: #d9dada;
-  --fondomenu: #ffffff;
-  --textomenu: #727271;
+  --fondo: #ffffff;
+  --texto-plomo: #727271;
+    --fondomenu: #182538;
+  --textomenu: #f8f8f8;  
 }
 
 .header {
@@ -38,7 +39,7 @@
 }
 
 nav {
-  padding: 15px 10%;
+  padding: 25px 10% 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +89,7 @@ main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 120px 10%;
+  padding: 110px 10% 10px;
   gap: 2rem;
 }
 
@@ -113,11 +114,13 @@ span {
 }
 
 .datos p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--texto-plomo);
   line-height: 23px;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1.7rem;
+  text-align: justify;
 }
 
 .datos .btn {
@@ -193,20 +196,20 @@ span {
 
 @media (max-width: 991px) {
   main {
-    padding: 100px 10%;
+    padding: 100px 10% 50px;
   }
   .header {
     background: var(--fondo);
     box-shadow: 0 4px 20px rgb(14 55 54 / 12%);
   }  
   .imagen {
-    margin-top: 50px;
-  }
+    margin-top: 40px;
+  }  
 }
 
 @media (max-width:768px) {
   nav #ham {
-    display: initial;
+    display: initial;    
   }
   nav ul {
     position: fixed;
@@ -219,30 +222,30 @@ span {
     text-align: center;
     justify-content: center;
     clip-path: circle(0% at 50% 50%);
-    gap: 20px;
+    gap: 1.3rem;
   }
 
   nav ul a {
     color: var(--textomenu);
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .datos h1 {
     line-height: 4rem;
   }
   .social {
-    gap: 1.5rem;     
+    gap: 1.9rem;     
   }
   
   .activo {    
     clip-path: circle(100% at 50% 50%);
   }
-
+  
   .fa-times {
     transform: rotate(90deg);
+    color: var(--textomenu) !important;
   }
   .logo {
     width: 2rem;
   }
-
 }
