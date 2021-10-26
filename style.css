@@ -11,22 +11,27 @@
   list-style: none;
   scroll-behavior: smooth;
   user-select: none;
+
 }
 
 :root {
   --fondo: #182538;
   --texto-plomo: #d9dada;
+
   --anaranjado: #ffad00;
   --celeste: #16baf9;
   --celeste-claro: #55cdfa;
-    --fondomenu: #f8f8f8;
+  
+  --fondomenu: #f8f8f8;
   --textomenu: #727271;
+
 }
 
 .dark-theme {
   --fondo: #ffffff;
   --texto-plomo: #727271;
-    --fondomenu: #182538;
+  
+  --fondomenu: #182538;
   --textomenu: #f8f8f8;  
 }
 
@@ -144,20 +149,20 @@ span {
 }
 
 .social a {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 2px solid var(--texto-plomo);
+  width: 2rem;
+  height: 2rem;
+  border: 1.9px solid var(--texto-plomo);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--texto-plomo);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .social a:hover {
   background: #00b5c613;
-  border: 2px solid var(--celeste);
+  border: 1.9px solid var(--celeste);
   color: var(--celeste);
 }
 
@@ -176,8 +181,8 @@ span {
 .imagen .niño {
   position: absolute;
   top: 0;
-  left: 15%;
-  width:70%;
+  left: 16%;
+  width:65%;
   z-index: 1000;
   animation: flotar 3s ease-in-out infinite;
 }
@@ -234,7 +239,7 @@ span {
     line-height: 4rem;
   }
   .social {
-    gap: 1.9rem;     
+    gap: 1rem;     
   }
   
   .activo {    
